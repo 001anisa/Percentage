@@ -36,16 +36,14 @@ let reload= () =>
   return (
     <div className="App">
       <div className="container">
-        <h2> Percentage Claculator</h2>
+        <h2 className="heading"> Percentage Claculator</h2>
         <form onSubmit={calc}>
           <div>
-            <label>Amount</label>
             <input type="text" placeholder="Enter amount" value={amount} onChange={(e)=> setAmount(e.target.value)}
             />
           </div>
 
           <div>
-            <label>Percentage(%)</label>
             <input type="text" placeholder="Enter percentage" value={perc} onChange={(e)=> setPerc(e.target.value)}/>
           </div>
 
